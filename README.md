@@ -49,15 +49,25 @@ Then, if you don't have developer option tab in menu section, follow this proced
 CODE FOR RESIZING THE PICTURES:
 
 Sub resize()
+
 Dim x As Long
+
 With ActiveDocument
+
 For x = 1 To .InlineShapes.Count
+
 With .InlineShapes(x)
+
 .Height = InchesToPoints(2)
+
 .Width = InchesToPoints(3)
+
 End With
+
 Next x
+
 End With
+
 End Sub
 
 Hope you find a easy method for your resizing mass pictures. This can be done in every office packages like in excel,powerpoint as well. 
